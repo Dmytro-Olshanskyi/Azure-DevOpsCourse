@@ -10,3 +10,11 @@
 5. **Assign the Global Reader role to the Admins group.**
 6. **Assign the Application Developer role to the Developers group.**
 7. **Verify that the role assignments function as expected for both groups.**
+
+#### Issues:
+1. **There is no possibilities to create Microsoft Entra ID tenant under Pay-As-You-Go subscription.**
+2. **Add Global Reader permission to the user only. There is no possibility to assign a role.
+
+
+#### Quastions:
+1. **Is it possible to assign permissions to a group?**
