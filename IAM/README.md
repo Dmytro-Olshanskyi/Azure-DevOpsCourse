@@ -50,6 +50,15 @@ group.**
 roup have full access to the resource group.**
 
 
-Task4
+### Practical Task 4: Securing Sensitive Information with Azure Key Vault
+#### Set up Azure Key Vault to securely store and manage sensitive information such as keys, secrets, and
+### #certificates.
+#### Requirements:
+1. **Create a new Azure Key Vault in your subscription.**
+2. **Add a secret to the Key Vault (e.g., a database connection string).**
+3. **Set access policies to grant the Application Developer role (assigned to the Developers group)**
+**permission to retrieve secrets from the Key Vault.**
+4. **Verify that only members of the Developers group can access the stored secret**
+
 Task5
 Task6
