@@ -60,5 +60,16 @@ roup have full access to the resource group.**
 **permission to retrieve secrets from the Key Vault.**
 4. **Verify that only members of the Developers group can access the stored secret**
 
+
+#### Notes: 
+How to video:
+https://www.youtube.com/watch?v=Mgaoz8gFy_I
+
+Pricing:
+https://azure.microsoft.com/en-us/pricing/details/key-vault/
+
+Wait for a access.
+
+
 Task5
 Task6
