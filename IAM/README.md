@@ -82,5 +82,8 @@ Environment: Development).**
 non-compliant.**
 4. **Review and document the compliance status of the resource group.**
 
+#### Notes: 
+https://www.youtube.com/watch?v=srR_fqgweDI 
+
 
 Task6
