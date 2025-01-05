@@ -84,6 +84,7 @@ non-compliant.**
 
 #### Notes: 
 https://www.youtube.com/watch?v=srR_fqgweDI 
+https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-basics
 
 
 Task6

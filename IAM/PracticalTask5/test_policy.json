@@ -1,0 +1,40 @@
+{
+    "mode": "All",
+    
+    "policyRule": {
+        "if": {
+          "not": {
+            "field": "tags[Environment]",
+            "exists": "true"
+          } // If tag envitonment not exist and vlue is not in psrsmeters.
+          }
+        },
+        "then": {
+          "effect": "deny"
+        }
+
+
+
+
+    "policyRule": {
+      "if": {
+        "not": {
+          "field": "location",
+          "in": "[parameters('allowedLocations')]"
+        }
+      },
+      "then": {
+        "effect": "audit"
+      }
+    },
+    "parameters": {
+      "allowedLocations": {
+        "type": "Array",
+        "metadata": {
+          "description": "The list of allowed locations for resources.",
+          "displayName": "Allowed locations",
+          "strongType": "location"
+        }
+      }
+    }
+  }
