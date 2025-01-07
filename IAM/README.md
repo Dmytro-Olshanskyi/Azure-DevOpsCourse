@@ -98,3 +98,7 @@ group.**
 3. **Assign these policies to a resource group and verify their behavior by:**
 ** o Creating a resource without a tag and checking the compliance logs.**
 ** o Creating a resource to validate the automatic tag deployment**
+
+
+#### Questions:
+1. Show we use 'Append' action or 'DeployIfNotExists'?
