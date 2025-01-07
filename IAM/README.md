@@ -87,4 +87,14 @@ https://www.youtube.com/watch?v=srR_fqgweDI
 https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-basics
 
 
-Task6
+### Practical Task 6: Using Policy Effects to Enforce Compliance
+####Configure Azure Policies with different policy effects to enforce compliance and manage resources
+####according to organizational standards.
+####Requirements:
+**1. **Create a policy with the Audit effect to monitor and log untagged resources within a resource**
+group.**
+2. **Create a policy with the DeployIfNotExists effect to automatically add a specific tag (Owner: IT) to**
+**any newly created resource.**
+3. **Assign these policies to a resource group and verify their behavior by:**
+** o Creating a resource without a tag and checking the compliance logs.**
+** o Creating a resource to validate the automatic tag deployment**
