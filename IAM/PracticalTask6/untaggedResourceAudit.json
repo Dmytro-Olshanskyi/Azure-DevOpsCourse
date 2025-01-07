@@ -1,28 +1,12 @@
-"parameters": {
-    "tagName": {
-        "type": "String",
-        "metadata": {
-            "displayName": "Tag Name 'Environment'",
-            "description": "Tag 'Environment'"
+{
+    "mode": "Indexed",
+    "policyRule": {
+        "if": {
+            "value": "[less(length(field('tags')), 1)]",
+            "equals": "true"
+        },
+        "then": {
+            "effect": "audit"
         }
-    }
-},
-"policyRule": {
-    "if": {
-        "allOf": [
-            {
-                "field": "type",
-                "notEquals": "Microsoft.Resources/subscriptions/resourceGroups"
-            },
-            {
-                "not": {
-                    "field": "[resourceGroup().tags[parameters('Environment')]]",
-                    "exists": "false"
-                }
-            }
-        ]
-    },
-    "then": {
-        "effect": "audit"
     }
 }
