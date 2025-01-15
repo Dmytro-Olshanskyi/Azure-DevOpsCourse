@@ -10,6 +10,13 @@
 5. **Test access to the Nginx web server from a browser.**
 6. **Verify that any other ports are blocked by the NSG.**
 
+#### Notes
+1. ** VNET was created**
+2. Public IP?
+3. NSG for public IP
+4. VM with key pair + public IP
+5. Connect and install NGINX
+
 
 
 
