@@ -37,3 +37,22 @@ https://learn.microsoft.com/en-us/iis/manage/creating-websites/scenario-build-a-
 2. Create Internet GW
 3. Set up Linux Vm withnx
 4. Install Wwin VM Using the link above.
+
+### Practical Task 3: Configuring an Azure Load Balancer
+####Create and configure a Basic Azure Load Balancer to distribute traffic across multiple virtual
+####machines.
+####Requirements:
+1. **Create two Linux or Windows virtual machines in the same region and virtual network using
+the Azure Free Tier.**
+2. **Install and configure a web server (e.g., Nginx on Linux or IIS on Windows) on both VMs with****
+unique content for testing.**
+3. **Create a Basic Load Balancer in Azure (included in the free tier) and configure it to balance**
+HTTP (port 80) traffic between the two virtual machines.**
+4. **Configure a health probe to monitor the availability of the VMs.**
+5. **Test the Load Balancer by accessing its public IP address from a browser and verify that**
+traffic is routed to both VMs (by observing the unique content from each server).**
+6. **Verify that the Load Balancer removes unavailable VM from the traffic pool when it fails the
+health probe.**
+
+
+Practical Task 4: Configuring a Basic Load Balancer with Virtual Machine Scale Sets (VM
