@@ -73,3 +73,13 @@ routes traffic to the newly added VMs.
 distribution across multiple VM instances.
 7. **Verify that the Load Balancer removes an unavailable instance from the traffic pool when it
 fails the health probe.
+
+
+7 #### Note:
+ 78 1, Add bastion to comunucate with VMs in VMSS
+ 79
+ 80 #### Question:
+ 81 1. How to move VMSS to anather subnet?
+ 82 2. Is bastion can access VMs that are in/AzureBastionSubnet only?
+ 83 3. Not fully understand usag of NIC during VMSS creation
+ 84 3. Plan to set up Vss+Dasic LB+Bastion+VM SturtUp Configuration
