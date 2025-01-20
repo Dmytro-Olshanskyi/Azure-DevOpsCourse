@@ -55,4 +55,21 @@ traffic is routed to both VMs (by observing the unique content from each server)
 health probe.**
 
 
-Practical Task 4: Configuring a Basic Load Balancer with Virtual Machine Scale Sets (VM
+###Practical Task 4: Configuring a Basic Load Balancer with Virtual Machine Scale Sets (VM
+####Practical Task 4: Configuring a Basic Load Balancer with Virtual Machine Scale Sets (VMSS)
+####Set up a Basic Azure Load Balancer to distribute traffic across a Virtual Machine Scale Set (VMSS).
+####Requirements:
+1. **Create a Virtual Machine Scale Set (VMSS) in Azure using Linux or Windows instances
+within the free tier (for example B1s size). Limit the scale set to two VM instances to avoid
+exceeding the free-tier 750-hour limit.
+2. **Deploy the scale set with a custom configuration to install and configure a web server (e.g.,
+Nginx on Linux or IIS on Windows) on each VM instance.
+3. **Configure the Basic Load Balancer to distribute HTTP (port 80) traffic across the VM
+instances in the scale set.
+4. **Add a health probe to monitor the availability of instances in the VMSS.
+5. Scale the VMSS manually by increasing the number of instances to verify the Load Balancer
+routes traffic to the newly added VMs.
+6. **Test the setup by accessing the Load Balancer's public IP address and verifying traffic
+distribution across multiple VM instances.
+7. **Verify that the Load Balancer removes an unavailable instance from the traffic pool when it
+fails the health probe.
