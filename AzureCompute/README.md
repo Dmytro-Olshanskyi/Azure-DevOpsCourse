@@ -52,7 +52,7 @@ https://learn.microsoft.com/en-us/iis/manage/creating-websites/scenario-build-a-
 5. **Test the Load Balancer by accessing its public IP address from a browser and verify that**
 **traffic is routed to both VMs (by observing the unique content from each server).**
 6. **Verify that the Load Balancer removes unavailable VM from the traffic pool when it fails the**
-health probe.**
+**health probe.**
 
 
 ### Practical Task 4: Configuring a Basic Load Balancer with Virtual Machine Scale Sets (VM
