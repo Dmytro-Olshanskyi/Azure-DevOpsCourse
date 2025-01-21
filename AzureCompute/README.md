@@ -82,4 +82,19 @@ https://learn.microsoft.com/en-us/iis/manage/creating-websites/scenario-build-a-
 1. How to move VMSS to anather subnet?
 2. Is bastion can access VMs that are in/AzureBastionSubnet only?
 3. Not fully understand usag of NIC during VMSS creation
-4. Plan to set up Vss+Dasic LB+Bastion+VM SturtUp Configuration
+4. Plan to set up VSS+Basic LB+Bastion+VM SturtUp Configuration
+
+Practical Task 5: Deploying a Web Application Using Azure App Services
+Set up and deploy a simple web application using Azure App Services.
+Requirements:
+1. Create an Azure App Service (Web App) using the Azure Free Tier.
+2. Select the runtime stack of your choice (e.g., .NET, Python, Node.js) during the setup.
+3. Develop or use a sample web application (e.g., a "Hello World" app) and deploy it to the App
+Service using:
+o Azure Portal
+o Azure CLI
+o Or direct deployment from a GitHub repository.
+4. Test the deployed application by accessing its URL provided by Azure App Services.
+5. Enable App Service Logs and verify that application logs are being generated.
+6. Clean up resources after completion to avoid unnecessary usage.
+Practical Task 6: Creating and Deploying an Azure Function to Process HTTP Request
