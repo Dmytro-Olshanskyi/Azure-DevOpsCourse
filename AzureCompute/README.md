@@ -3,12 +3,11 @@
 #### Group (NSG).
 #### Requirements:
 0. **Create VNET**
-Create NATGW
+Create VNET
+Create subnts
 Create NSG
-Make subnet privste
-Assign MATGW to sunbnet
 Assign NSG to subnet
-Rooting? 
+
 
 https://www.youtube.com/watch?v=f5E1lR6fppI
 
@@ -21,11 +20,7 @@ https://www.youtube.com/watch?v=f5E1lR6fppI
 6. **Verify that any other ports are blocked by the NSG.**
 
 #### Notes
-1. **VNET was created**
-2. Public IP?
-3. NSG for public IP
-4. VM with key pair + public IP
-5. Connect and install NGINX
+
 
 . Try Fortinet!
 https://www.youtube.com/watch?v=0SofViNhaxI&t=1195s
@@ -33,10 +28,6 @@ https://www.youtube.com/watch?v=0SofViNhaxI&t=1195s
 
 https://learn.microsoft.com/en-us/iis/manage/creating-websites/scenario-build-a-static-website-on-iis
 
-1. Creat VPC
-2. Create Internet GW
-3. Set up Linux Vm withnx
-4. Install Wwin VM Using the link above.
 
 ### Practical Task 3: Configuring an Azure Load Balancer
 #### Create and configure a Basic Azure Load Balancer to distribute traffic across multiple virtual
@@ -76,25 +67,58 @@ https://learn.microsoft.com/en-us/iis/manage/creating-websites/scenario-build-a-
 
 
 #### Note:
-1, Add bastion to comunucate with VMs in VMSS
+1, Add bastion to communicate with VMs in VMSS
 
 #### Question:
-1. How to move VMSS to anather subnet?
+1. How to move VMSS to another subnet?
 2. Is bastion can access VMs that are in/AzureBastionSubnet only?
-3. Not fully understand usag of NIC during VMSS creation
-4. Plan to set up VSS+Basic LB+Bastion+VM SturtUp Configuration
+3. Not fully understand usage of NIC during VMSS creation
+4. Plan to set up VSS+Basic LB+Bastion+VM StartUp Configuration
 
-Practical Task 5: Deploying a Web Application Using Azure App Services
-Set up and deploy a simple web application using Azure App Services.
-Requirements:
-1. Create an Azure App Service (Web App) using the Azure Free Tier.
-2. Select the runtime stack of your choice (e.g., .NET, Python, Node.js) during the setup.
-3. Develop or use a sample web application (e.g., a "Hello World" app) and deploy it to the App
-Service using:
-o Azure Portal
-o Azure CLI
-o Or direct deployment from a GitHub repository.
-4. Test the deployed application by accessing its URL provided by Azure App Services.
-5. Enable App Service Logs and verify that application logs are being generated.
-6. Clean up resources after completion to avoid unnecessary usage.
-Practical Task 6: Creating and Deploying an Azure Function to Process HTTP Request
+### Practical Task 5: Deploying a Web Application Using Azure App Services
+#### Set up and deploy a simple web application using Azure App Services.
+#### Requirements:
+1. **Create an Azure App Service (Web App) using the Azure Free Tier.**
+2. **Select the runtime stack of your choice (e.g., .NET, Python, Node.js) during the setup.**
+3. **Develop or use a sample web application (e.g., a "Hello World" app) and deploy it to the App**
+**Service using:**
+**o Azure Portal**
+**o Azure CLI**
+**o Or direct deployment from a GitHub repository.**l
+4. **Test the deployed application by accessing its URL provided by Azure App Services.**
+5. **Enable App Service Logs and verify that application logs are being generated.**
+6. **Clean up resources after completion to avoid unnecessary usage.**
+**Practical Task 6: Creating and Deploying an Azure Function to Process HTTP Request**
+
+#### Notes:
+Create Web App.
+Create a "Hello world" node.js app
+Try to deploy via VS code 
+
+
+### Practical Task 6: Creating and Deploying an Azure Function to Process HTTP Requests
+#### Set up and deploy an Azure Function that processes HTTP requests directly from the Azure portal.
+#### Requirements:
+1. **Set Up the Function App:**
+o Access the Azure portal and navigate to Azure Functions.
+o Create a new Function App using the Consumption (Serverless) plan within the free
+tier.
+2. **Create a Function:**
+o Select the HTTP trigger template.
+o Choose a language of your choice (e.g., C#, JavaScript, or Python).
+3. **Customize the Function:**
+o Modify the default code to return the following response:
+Hello, [name]! Welcome to Azure Functions.
+o If no name parameter is provided in the query string or request body, the response
+should be:
+Hello! Please provide your name.
+4. **Test the Function:**
+o Use the Test/Run feature in the Azure portal to send HTTP requests.
+o Verify the Function responds appropriately with and without the name parameter.
+5. **Verify External Access:**
+o Retrieve the public URL of the Azure Fu
+
+#### Notex;
+https://www.youtube.com/watch?v=YQtVJ7qVXDs
+
+
