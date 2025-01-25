@@ -18,3 +18,20 @@ Done
 **delete blobs older than 90 days.**
 4. **Simulate policy execution by manually testing with different file creation timestamps.**
 5. **Verify that blobs are moved or deleted according to the policy.**
+
+### Practical Task 3: Implementing an Azure Queue for Message Storage
+#### Create and manage an Azure Queue to store and process messages.
+#### Requirements:
+1. **Create a storage account and enable the Queue service.**
+2. **Create a queue named "task-queue."**
+3. **Use Azure Storage Explorer or the Azure portal to add messages to the queue.**
+4. **Retrieve and process messages directly using Azure Storage Explorer or the Azure portal**
+**interface.**
+5. **Verify that processed messages are removed from the queue manually**
+
+#### Notes:
+https://www.youtube.com/watch?v=TzGLRUcdBes&t=3s
+
+Dequeue messages - receive and delete
+https://learn.microsoft.com/en-us/azure/storage/queues/storage-tutorial-queues?toc=%2Fazure%2Fstorage%2Fqueues%2Ftoc.json
+
