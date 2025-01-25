@@ -35,3 +35,12 @@ https://www.youtube.com/watch?v=TzGLRUcdBes&t=3s
 Dequeue messages - receive and delete
 https://learn.microsoft.com/en-us/azure/storage/queues/storage-tutorial-queues?toc=%2Fazure%2Fstorage%2Fqueues%2Ftoc.json
 
+### Practical Task 4: Configuring Azure File Share and Mounting on a Local Machine
+##### Set up and access Azure File Storage for shared file access.
+##### Requirements:
+1. **Create a storage account and set up an Azure File Share.**
+2. **Upload a file to the file share using the Azure portal.**
+3. **Generate a connection script for Windows or Linux and use it to mount the file share on your**
+**local machine.**
+4. **Verify the mounted file share and ensure it displays the uploaded file.**
+5. **Add another file to the file share from the local machine and confirm it reflects in Azure.** 
