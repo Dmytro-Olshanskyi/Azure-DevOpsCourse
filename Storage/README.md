@@ -74,6 +74,7 @@ Done
 5. **Analyze the security implications of SAS tokens and expiry times**
 
 #### Question:
+Access to a concrete file not to full container? - How to get access to a container?
 
 ### Practical Task 7: Implementing Security Best Practices with Azure RBAC and Managed
 ### Identities
