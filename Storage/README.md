@@ -72,3 +72,22 @@ Done
 3. **Share the SAS token URL and verify access to the Blob container with the token.**
 4. **Repeat the process for File, Queue, and Table services with different permissions.**
 5. **Analyze the security implications of SAS tokens and expiry times**
+
+#### Question:
+
+### Practical Task 7: Implementing Security Best Practices with Azure RBAC and Managed
+### Identities
+#### Securely manage access to Azure resources and integrate services using Managed Identities.
+#### Requirements:
+1. **Configure Azure RBAC for a Storage Account:**
+o Create a storage account named "secure-storage".
+o Add a user or service principal with Storage Blob Data Contributor role.
+o Verify that the user or service principal can upload and download blobs to the
+account.
+o Attempt access with an unauthorized user and verify access is denied.
+2. **Set Up a Managed Identity for an Azure Virtual Machine:**
+o Create an Azure Virtual Machine (VM) with a system-assigned Managed Identity
+enabled.
+o Assign the Storage Blob Data Reader role to the Managed Identity for "securestorage".
+o Connect to the VM and verify that the Managed Identity can access blob data using
+Azure CLI or a pre-installed script.
