@@ -62,3 +62,13 @@ Done
 5. **Delete specific entries from the table and verify the changes.**
 
 Done
+
+### Practical Task 6: Configuring Shared Access Signatures (SAS) for Secure Access
+#### Secure Azure Storage services using SAS tokens.
+#### Requirements:
+1. **Create a storage account with Blob, File, Queue, and Table services enabled.**
+2. ****Generate a Shared Access Signature (SAS) token for Blob storage with limited permissions**
+**(e.g., read-only access).**
+3. **Share the SAS token URL and verify access to the Blob container with the token.**
+4. **Repeat the process for File, Queue, and Table services with different permissions.**
+5. **Analyze the security implications of SAS tokens and expiry times**
