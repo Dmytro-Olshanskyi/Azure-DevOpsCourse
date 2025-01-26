@@ -44,3 +44,5 @@ https://learn.microsoft.com/en-us/azure/storage/queues/storage-tutorial-queues?t
 **local machine.**
 4. **Verify the mounted file share and ensure it displays the uploaded file.**
 5. **Add another file to the file share from the local machine and confirm it reflects in Azure.** 
+
+Done
