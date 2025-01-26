@@ -60,3 +60,5 @@ Done
 **Explorer or Azure CLI.**
 4. **Query the table for specific data using filters (e.g., "Role = Developer").**
 5. **Delete specific entries from the table and verify the changes.**
+
+Done
