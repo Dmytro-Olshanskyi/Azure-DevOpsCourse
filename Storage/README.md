@@ -19,6 +19,9 @@ Done
 4. **Simulate policy execution by manually testing with different file creation timestamps.**
 5. **Verify that blobs are moved or deleted according to the policy.**
 
+#### Note:
+1.How to change a file creation date except to download a the file one more time?
+
 ### Practical Task 3: Implementing an Azure Queue for Message Storage
 #### Create and manage an Azure Queue to store and process messages.
 #### Requirements:
@@ -32,6 +35,7 @@ Done
 #### Notes:
 https://www.youtube.com/watch?v=TzGLRUcdBes&t=3s
 
+How to Retrieve and process messages ? Can do this using some SDK.
 Dequeue messages - receive and delete
 https://learn.microsoft.com/en-us/azure/storage/queues/storage-tutorial-queues?toc=%2Fazure%2Fstorage%2Fqueues%2Ftoc.json
 
@@ -46,3 +50,13 @@ https://learn.microsoft.com/en-us/azure/storage/queues/storage-tutorial-queues?t
 5. **Add another file to the file share from the local machine and confirm it reflects in Azure.** 
 
 Done
+
+### Practical Task 5: Storing and Querying Data with Azure Table Storage
+#### Set up and use Azure Table Storage for structured data.
+#### Requirements:
+1. **Create a storage account and enable the Table service.**
+2. **Create a table named "employee-data".**
+3. **Add sample data (e.g., employee IDs, names, and roles) to the table using Azure Storage**
+**Explorer or Azure CLI.**
+4. **Query the table for specific data using filters (e.g., "Role = Developer").**
+5. **Delete specific entries from the table and verify the changes.**
