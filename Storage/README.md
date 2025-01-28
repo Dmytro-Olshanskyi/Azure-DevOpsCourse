@@ -109,3 +109,12 @@ Azure CLI or a pre-installed script.
 5. **Query the table to display all records and verify the data.**
 
 Done
+
+### Practical Task 9: Deploying an Azure SQL Database with Automated Backup Configuration
+#### Set up an Azure SQL Database and configure automated backups.
+####Requirements:
+1. **Create an Azure SQL Database in a new or existing resource group.**
+2. **Choose the desired service tier (e.g., Basic or General Purpose).**
+3. **Enable and configure long-term backup retention for the database.**
+4. **Use the Azure portal to verify backup settings and review available restore points.**
+5. **Test the restore process by creating a new database from a backup.**
