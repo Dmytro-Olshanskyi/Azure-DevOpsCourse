@@ -98,3 +98,12 @@ Azure CLI or a pre-installed script.
 1. How to perform task7 ?! :(
 
 
+### Practical Task 8: Creating and Querying an Azure SQL Database
+#### Learn to create and query an Azure SQL Database using the Azure portal.
+#### Requirements:
+1. **Create an Azure SQL Database named "test-db" in a new logical SQL server.**
+2. **Set the pricing tier to the free tier for cost optimization.**
+3. **Use the Query Editor in the Azure portal to create a table named "Products" with columns**
+**for ID, Name, and Price.**
+4. **Insert a few sample records into the "Products" table using a SQL query.**
+5. **Query the table to display all records and verify the data.**
