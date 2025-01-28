@@ -107,3 +107,5 @@ Azure CLI or a pre-installed script.
 **for ID, Name, and Price.**
 4. **Insert a few sample records into the "Products" table using a SQL query.**
 5. **Query the table to display all records and verify the data.**
+
+Done
