@@ -112,9 +112,59 @@ Done
 
 ### Practical Task 9: Deploying an Azure SQL Database with Automated Backup Configuration
 #### Set up an Azure SQL Database and configure automated backups.
-####Requirements:
+#### Requirements:
 1. **Create an Azure SQL Database in a new or existing resource group.**
 2. **Choose the desired service tier (e.g., Basic or General Purpose).**
 3. **Enable and configure long-term backup retention for the database.**
 4. **Use the Azure portal to verify backup settings and review available restore points.**
 5. **Test the restore process by creating a new database from a backup.**
+
+#### Question:
+
+### Practical Task 10: Getting Started with Cosmos DB
+#### Set up and explore Cosmos DB by creating a database, managing data, querying, and testing key
+#### features like consistency and global distribution.
+#### Requirements:
+1. **Create a Cosmos DB Account:**
+o Create a new Cosmos DB account in the Azure portal using the Core (SQL) API.
+o Select a region for the account and use the default settings.
+o Review key features like throughput, consistency levels, and global distribution.
+o Note down the primary and secondary keys for the account.
+2. **Set Up a Database and Container:**
+o Create a database named "SampleDB" in the Cosmos DB account.
+o Add a container named "Items" with the partition key set to /category.
+o Use the default throughput settings for the database and container.
+
+3. **Insert Data Using Data Explorer:**
+o Open the Data Explorer in the Azure portal.
+o Insert at least three sample JSON documents into the "Items" container. Example:
+{
+ "id": "1",
+ "name": "Smartphone",
+ "category": "Electronics",
+ "price": 699
+}
+o Verify that the documents are successfully added and visible in the Data Explorer.
+
+4. **Query Data in Cosmos DB:**
+o Use SQL-like queries in the Data Explorer to retrieve data:
+▪ Retrieve all documents: SELECT * FROM c
+▪ Retrieve specific documents: SELECT * FROM c WHERE c.category =
+'Electronics'
+o Observe how the partition key affects query results.
+
+5. **Configure and Test Consistency Levels:**
+o Review the available consistency levels in the Cosmos DB account: Eventual,
+Session, Consistent Prefix, Bounded Staleness, Strong.
+o Set the account-level consistency to "Session."
+o Perform a query or data operation and observe the impact on performance and
+latency.
+
+6. **Enable Global Distribution and Test Replication:**
+o Enable multi-region replication by adding at least one additional region to the
+Cosmos DB account.
+o Insert new data into the primary region and verify that it replicates to the secondary
+region.
+o Perform a manual failover and verify that the secondary region becomes the
+primary.
+o Test data consistency and latency after failover.
