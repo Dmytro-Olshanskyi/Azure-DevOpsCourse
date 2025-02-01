@@ -14,3 +14,15 @@
 
 #### Notes
 1. B1s - there is no such configuration
+
+
+### Practical Task 2: Configure Environment Variables in ACI via Azure Portal
+#### Requirements:
+1. **Modify your Docker image to read configuration values from environment variables,**
+**ensuring minimal environmental complexity.**
+2. **Reuse the ACI instance from Task 1 to deploy the container and specify the necessary**
+**environment variables.**
+3. **Verify that the application is correctly using the environment variables by checking its**
+**output.**
+4. **Remove the ACI container after verifying that the application correctly uses the**
+**environment variables.**
