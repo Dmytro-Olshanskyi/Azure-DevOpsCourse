@@ -8,4 +8,9 @@
 4. **Verify the deployment by accessing the web application via the public IP address provided**
 **by ACI.**
 5. **Remove the ACI container after verifying the deployment to stop billing.**
-https://mcr.microsoft.com/en-us/artifact/mar/mcr/hello-world/tags
+
+#### Question:
+1. What subnet configuration is used for ACI location?
+
+#### Notes
+1. B1s - there is no such configuration
