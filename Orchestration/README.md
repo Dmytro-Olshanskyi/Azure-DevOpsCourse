@@ -54,3 +54,5 @@ Done.
 3. **Retrieve only a single secret from Azure Key Vault for testing purposes.**
 4. **Remove the ACI container after verifying secure access.**
 
+#### Notes
+1. Create Endpoint for keyvault 
