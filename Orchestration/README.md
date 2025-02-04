@@ -46,7 +46,7 @@ Done.
 
 Need to use Container Group?...skip and go forward
 
-Container App
+Container
 
 
 ### Practical Task 4: Secure a Docker Container in ACI with Managed Identity via Azure Portal
@@ -74,3 +74,7 @@ DONE!
 2. **Connect to the AKS cluster using Azure Cloud Shell with kubectl.**
 3. **Deploy a lightweight Nginx application for verification.**
 4. **Delete the AKS cluster immediately after testing to avoid additional VM and cluster costs.**
+
+
+Done!
+
