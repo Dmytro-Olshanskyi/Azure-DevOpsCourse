@@ -44,6 +44,8 @@ Done.
 #### Notes:
 1. ACI can not be scale out according to docs(see screenshot from PtacticalTask3). Hmm....
 
+Need to use Container Group?...skip and go forward
+
 
 ### Practical Task 4: Secure a Docker Container in ACI with Managed Identity via Azure Portal
 #### Requirements:
@@ -56,3 +58,17 @@ Done.
 
 #### Notes
 1. Create Endpoint for keyvault 
+2. Enable connection from my IP
+3. Set Key Vault Crypto User role
+4. Update a Dockerfile to install AZURE CLI to access the key vault
+
+
+DONE!
+
+### Practical Task 5: Deploy a Kubernetes Cluster with AKS via Azure Portal
+#### Requirements:
+1. **Create an Azure Kubernetes Service (AKS) cluster with the smallest VM size (e.g., B2s) and**
+**the minimum number of nodes (e.g., 1–2).**
+2. **Connect to the AKS cluster using Azure Cloud Shell with kubectl.**
+3. **Deploy a lightweight Nginx application for verification.**
+4. **Delete the AKS cluster immediately after testing to avoid additional VM and cluster costs.**
