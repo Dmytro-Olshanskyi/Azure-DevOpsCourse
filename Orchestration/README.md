@@ -46,6 +46,8 @@ Done.
 
 Need to use Container Group?...skip and go forward
 
+Container App
+
 
 ### Practical Task 4: Secure a Docker Container in ACI with Managed Identity via Azure Portal
 #### Requirements:
