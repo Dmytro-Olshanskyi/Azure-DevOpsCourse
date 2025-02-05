@@ -78,3 +78,12 @@ DONE!
 
 Done!
 
+### Practical Task 6: Deploy a Containerized Application on AKS
+#### Requirements:
+1. **Build a lightweight Docker image for a simple web application (e.g., a Node.js app with**
+**minimal dependencies) and push it to Azure Container Registry (ACR).**
+2. **Reuse the AKS cluster from Task 5 to deploy the application using a Kubernetes deployment**
+**and service manifest file.**
+3. **Test the application for a limited time and remove the deployment afterward.**
+
+Done!
