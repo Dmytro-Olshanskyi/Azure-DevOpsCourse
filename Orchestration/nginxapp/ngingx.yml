@@ -19,6 +19,13 @@ spec:
           image: dmytroolshanskyiacr.azurecr.io/my-nginx:latest
           ports:
             - containerPort: 80
+          resources:
+            requests:
+              cpu: "100m"     # Requests 100 millicores (0.1 CPU)
+              memory: "128Mi" # Requests 128 MB RAM
+            limits:
+              cpu: "500m"     # Max 500 millicores (0.5 CPU)
+              memory: "256Mi" # Max 256 MB RAM      
 #      imagePullSecrets:
 #        - name: acr-secret  # Ensure this secret is created for ACR authentication
 ---
