@@ -6,4 +6,6 @@
 4. **List all available subscriptions in your Azure account using both tools.**
 
 #### Notes:
-1. Use Docker for AzureCLI and PowerShell
+1. Use Docker images for AzureCLI and PowerShell
+https://www.youtube.com/watch?v=XTfIVffnapo
+Use dev Containers VSCode extention
