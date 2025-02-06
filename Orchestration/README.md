@@ -44,9 +44,7 @@ Done.
 #### Notes:
 1. ACI can not be scale out according to docs(see screenshot from PtacticalTask3). Hmm....
 
-Need to use Container Group?...skip and go forward
-
-Container
+Azure Container App
 
 
 ### Practical Task 4: Secure a Docker Container in ACI with Managed Identity via Azure Portal
