@@ -17,7 +17,3 @@ source ./vars/dev.env
 
 # Delete Resource Group
 
-delete_resource_group(){
-    echo "LOG: Delete $RESOURCE_GROUP_NAME"
-    az group delete --name $RESOURCE_GROUP_NAME
-}

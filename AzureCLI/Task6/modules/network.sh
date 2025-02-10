@@ -1,32 +1,37 @@
 #!/bin/bash
 
 # Variables
-RESOURCE_GROUP_NAME="MyResourceGroup"
-LOCATION="eastus"
-VNET_NAME="MyVNet"
-SUBNET_NAME="MySubnet"
-ADDRESS_PREFIX="10.0.0.0/16"
-SUBNET_PREFIX="10.0.0.0/24"
+RESOURCE_GROUP_NAME=${RESOURCE_GROUP_NAME}
+LOCATION=${LOCATION}
+VNET_NAME=${VNET_NAME}
+SUBNET_NAME=${SUBNET_NAME}
+ADDRESS_PREFIX=${ADDRESS_PREFIX}
+SUBNET_PREFIX=${SUBNET_PREFIX}
 
-# Login to Azure (if not already logged in)
-az login
+create_network(){
 
-# Create Resource Group
-az group create --name $RESOURCE_GROUP_NAME --location $LOCATION
-
+echo "LOG: Create network ${VNET_NAME}"    
 # Create Virtual Network
-az network vnet create \
-    --resource-group $RESOURCE_GROUP_NAME \
-    --name $VNET_NAME \
-    --address-prefix $ADDRESS_PREFIX \
-    --location $LOCATION
+    az network vnet create \
+        --resource-group ${RESOURCE_GROUP_NAME} \
+        --name ${VNET_NAME} \
+        --address-prefix ${ADDRESS_PREFIX} \
+        --location ${LOCATION}
+}
 
+create_subnet(){
 # Create Subnet
 az network vnet subnet create \
-    --resource-group $RESOURCE_GROUP_NAME \
-    --vnet-name $VNET_NAME \
-    --name $SUBNET_NAME \
-    --address-prefix $SUBNET_PREFIX
+    --resource-group ${RESOURCE_GROUP_NAME} \
+    --vnet-name ${VNET_NAME} \
+    --name ${SUBNET_NAME} \
+    --address-prefix ${SUBNET_PREFIX}
 
 # Verify creation
-az network vnet show --resource-group $RESOURCE_GROUP_NAME --name $VNET_NAME
+az network vnet show --resource-group ${RESOURCE_GROUP_NAME} --name ${VNET_NAME}
+}
+
+delete_netwurk(){
+    echo "LOG: Delete network ${VNET_NAME}"
+    az network vnet delete --resource-group ${RESOURCE_GROUP_NAME} --name ${VNET_NAME}
+}

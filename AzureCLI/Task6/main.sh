@@ -17,10 +17,15 @@ cat ./vars/dev.env
 source ./modules/resource_group.sh
 create_resource_group
 
+source ./modules/network.sh
+create_network
+create_subnet
+
+source ./modules/storage_account.sh
+create_storage_account
+create_blob
 
 
-# create_network
-# create_subnet
 
 # create_storage_account
 # create_blob
@@ -35,8 +40,12 @@ create_resource_group
 # check_web
 
 
-source ./modules/cleanup.sh
+
 delete_resource_group
+delete_netwurk
+delete_storage_account
+
+
 
 
 
