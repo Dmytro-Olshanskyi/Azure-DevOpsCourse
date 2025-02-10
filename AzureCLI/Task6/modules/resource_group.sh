@@ -1,14 +1,13 @@
 #!/bin/bash
 
 # Variables
-RESOURCE_GROUP_NAME="MyResourceGroup"
-LOCATION="eastus"
+RESOURCE_GROUP_NAME=${RESOURCE_GROUP_NAME}
+LOCATION=${LOCATION}
 
-# Login to Azure (if not already logged in)
-az login
-
+create_resource_group(){
 # Create Resource Group
-az group create --name $RESOURCE_GROUP_NAME --location $LOCATION
+    az group create --name $RESOURCE_GROUP_NAME --location $LOCATION
 
 # Verify creation
-az group show --name $RESOURCE_GROUP_NAME
+    az group show --name $RESOURCE_GROUP_NAME
+}

@@ -1,38 +1,42 @@
 #! /bin/env bash
 
-source ./var/task6_var.sh
+source ./vars/dev.env
 
-echo ./var/task6_var.sh
-
-source ./module/resource_group.sh
-source ./module/network.sh
-source ./module/storage_account.sh
-source ./module/vm.sh
-source ./module/nginx.sh
-source ./module/Diagnostics.sh
-
-source ./module/check_web.sh
-source ./module/cleanup.sh
+cat ./vars/dev.env
 
 
-create_resource_group()
+# source ./modules/network.sh
+# source ./modules/storage_account.sh
+# source ./modules/vm.sh
+# source ./modules/nginx.sh
+# source ./modules/diagnostics.sh
 
-create_network()
-create_subnet()
+# source ./modules/check_web.sh
 
-create_storage_account()
-create_blob()
 
-create_vm()
-confifure_vm()
+source ./modules/resource_group.sh
+create_resource_group
 
-install_nginx()
 
-enable_Diagnostics()
 
-check_web()
+# create_network
+# create_subnet
 
-cleanup()
+# create_storage_account
+# create_blob
+
+# create_vm
+# confifure_vm
+
+# install_nginx
+
+# enable_Diagnostics
+
+# check_web
+
+
+source ./modules/cleanup.sh
+delete_resource_group
 
 
 
