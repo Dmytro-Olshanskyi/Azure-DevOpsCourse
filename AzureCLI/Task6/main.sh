@@ -20,6 +20,9 @@ create_resource_group
 source ./modules/network.sh
 create_network
 create_subnet
+# Nedd to check var names
+create_network_security_group
+create_nic
 
 source ./modules/storage_account.sh
 create_storage_account
@@ -41,9 +44,9 @@ create_blob
 
 
 
-delete_resource_group
-delete_netwurk
 delete_storage_account
+delete_netwurk
+delete_resource_group
 
 
 
