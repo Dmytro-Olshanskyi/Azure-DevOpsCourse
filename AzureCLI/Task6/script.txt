@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Update package list and install NGINX
+echo "Updating package list and installing NGINX..."
+sudo apt update -y
+sudo apt install nginx -y
+
+# Enable and start NGINX
+echo "Enabling and starting NGINX..."
+sudo systemctl enable nginx
+sudo systemctl start nginx
+
+# Create a simple HTML page
+echo "Creating Hello World webpage..."
+sudo bash -c 'cat > /var/www/html/index.html <<EOF
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This page is served by NGINX on an Ubuntu VM.</p>
+</body>
+</html>
+EOF'
+
+# Restart NGINX to apply changes
+echo "Restarting NGINX..."
+sudo systemctl restart nginx
+
+echo "NGINX installation and setup complete. Visit the server's public IP to view the site!"
