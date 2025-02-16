@@ -15,6 +15,8 @@ o Implement basic state locking using Azure blob storage.
 o Destroy the storage account (after confirming the state behavior).
 
 #### Notes:
+
+https://dev.azure.com/DmytroOlshanskyi/DmytroOlshanskyiAzureDevOpsProject/_git/DmytroOlshanskyiAzureDevOpsProject?version=GBdev&path=/TerraformAzure
 1. Authenticating using a Service Principal with a Client Secret
 
 Questions:
